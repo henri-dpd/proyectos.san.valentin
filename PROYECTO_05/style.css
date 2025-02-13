@@ -203,12 +203,43 @@ h1 {
     background: var(--heart-color); 
 }
 
-@media  screen and  (max-width: 400px){
+@media  screen and (max-width: 300px){
+    h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        width: 240px;
+    }
+
+    .envelope-wrapper > .envelope {
+        position: relative;
+        width: 240px;
+        height: 180px;
+    }
+
+    .tap-left,
+    .tap-right{
+        width: 100%;
+    }
+
+    .envelope-wrapper > .envelope::before {
+        border-top: 120px solid var(--envelope-tab);
+        border-right: 120px solid transparent;
+        border-left: 120px solid transparent;
+}
+
+}
+
+@media  screen and (min-width: 300px) and (max-width: 400px){
+    h1 {
+        font-size: 48px;
+    }
+
     .container {
         width: 300px;
     }
 
-    
     .envelope-wrapper > .envelope {
         position: relative;
         width: 300px;
@@ -220,7 +251,6 @@ h1 {
         width: 100%;
     }
 
-    
     .envelope-wrapper > .envelope::before {
         border-top: 150px solid var(--envelope-tab);
         border-right: 150px solid transparent;
